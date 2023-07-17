@@ -1,0 +1,3 @@
+export CNB_USER_ID=1000
+export CNB_GROUP_ID=1000
+export CNB_PLATFORM_API=0.12
