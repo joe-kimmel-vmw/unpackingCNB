@@ -1,0 +1,37 @@
+[image]
+  reference = "b3b301ba4e3a128c6807c8db105e3a15a9097cdf7d0612b899239318ee2c757c"
+
+[metadata]
+
+  [[metadata.app]]
+    sha = "sha256:fea1aa49a4e871615b1c262612bdfad1e189ac66b8d460f75bec65db663a1cc1"
+  [metadata.sbom]
+    sha = "sha256:3bfe468ff7500b24400c7c729c08ca552b3ad8988225936b217868c12ba3d37e"
+
+  [[metadata.buildpacks]]
+    key = "samples/hello-world"
+    version = "0.0.1"
+    [metadata.buildpacks.layers]
+
+  [[metadata.buildpacks]]
+    key = "samples/hello-moon"
+    version = "0.0.1"
+    [metadata.buildpacks.layers]
+  [metadata.config]
+    sha = "sha256:aa675fb936e4ebc0124f9cca656a5a6a1c157269b674a95f61013541983ed5b6"
+  [metadata.launcher]
+    sha = "sha256:5997e657adaac663e2effc468f1dee215be490465b84b72c535e708d3ba3209b"
+  [metadata.process-types]
+    sha = "sha256:e598f2ee7e8b980b4a96ba60481a083f241c970d4c6960ce0f4a200e985f996f"
+  [metadata.run-image]
+    top-layer = "sha256:9119d688e0b15b2c617da3212bafaf8458e6037c2fb332485ed36d040bfb7ca5"
+    reference = "96f1071770b9f69d475d73d2b033ac869e76fcf6f944116df94f1ffa4cb33e36"
+  [metadata.stack]
+    [metadata.stack.run-image]
+
+[run-image]
+  reference = "96f1071770b9f69d475d73d2b033ac869e76fcf6f944116df94f1ffa4cb33e36"
+  image = "cnbs/sample-stack-run:bionic"
+  [run-image.target]
+    os = "linux"
+    arch = "amd64"
