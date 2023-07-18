@@ -1,0 +1,14 @@
+[[entries]]
+
+  [[entries.providers]]
+    id = "samples/hello-world"
+    version = "0.0.1"
+
+  [[entries.requires]]
+    name = "some-world"
+
+  [[entries.requires]]
+    name = "some-world"
+    [entries.requires.metadata]
+      version = "0.1"
+      world = "Earth-616"

@@ -1,0 +1,11 @@
+[[group]]
+  id = "samples/hello-world"
+  version = "0.0.1"
+  api = "0.2"
+  homepage = "https://github.com/buildpacks/samples/tree/main/buildpacks/hello-world"
+
+[[group]]
+  id = "samples/hello-moon"
+  version = "0.0.1"
+  api = "0.2"
+  homepage = "https://github.com/buildpacks/samples/tree/main/buildpacks/hello-moon"
