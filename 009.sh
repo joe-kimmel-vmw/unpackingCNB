@@ -1,0 +1,1 @@
+$CNB_LIFECYCLE_PATH/exporter --log-level debug -launch-cache "./cache" -daemon -cache-dir "./cache"  -analyzed "./layers/analyzed.toml" -group "./layers/group.toml" -layers="./layers" -app "./workspace" -launcher="$CNB_LINUX_LAUNCHER_PATH"  apps/bash-script
