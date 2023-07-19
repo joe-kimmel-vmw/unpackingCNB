@@ -1,5 +1,3 @@
-processes = []
-
 [[buildpacks]]
   id = "samples/hello-world"
   version = "0.0.1"
@@ -11,3 +9,9 @@ processes = []
   version = "0.0.1"
   api = "0.2"
   homepage = "https://github.com/buildpacks/samples/tree/main/buildpacks/hello-moon"
+
+[[processes]]
+  type = "shell"
+  command = ["./app.sh"]
+  direct = false
+  buildpack-id = "samples/hello-moon"
