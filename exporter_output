@@ -6,7 +6,7 @@ Executing command...
 [33;1mWarning: [0mBuildpack 'samples/hello-moon@0.0.1' requests deprecated API '0.2'
 no project metadata found at path './layers/project-metadata.toml', project metadata will not be exported
 Reusing layers from image with id 'b3b301ba4e3a128c6807c8db105e3a15a9097cdf7d0612b899239318ee2c757c'
-no run metadata found at path '/cnb/run.toml'
+no stack metadata found at path '/cnb/stack.toml'
 [33;1mWarning: [0mDid not find SBOM lifecycle.sbom.cdx.json in /cnb/lifecycle
 [33;1mWarning: [0mDid not find SBOM lifecycle.sbom.spdx.json in /cnb/lifecycle
 [33;1mWarning: [0mDid not find SBOM lifecycle.sbom.syft.json in /cnb/lifecycle
@@ -24,9 +24,9 @@ Adding layer 'buildpacksio/lifecycle:launch.sbom'
 Layer 'buildpacksio/lifecycle:launch.sbom' SHA: sha256:a2a26303cbd06398a939660c2b8ab65fb437de84d8a98f5016e83088d1cf2477
 Layer 'slice-1' SHA: sha256:14f96accbbd83da94bbbe0b63de20ef1bb46230aa2d172e0fe7787ffb3833ba7
 Adding 1/1 app layer(s)
-Reusing tarball for layer "buildpacksio/lifecycle:launcher" with SHA: sha256:5997e657adaac663e2effc468f1dee215be490465b84b72c535e708d3ba3209b
-Reusing layer 'buildpacksio/lifecycle:launcher'
-Layer 'buildpacksio/lifecycle:launcher' SHA: sha256:5997e657adaac663e2effc468f1dee215be490465b84b72c535e708d3ba3209b
+Reusing tarball for layer "buildpacksio/lifecycle:launcher" with SHA: sha256:ecca2ebdafd6469267556356c06e33fc3a5eacb3a772001a16b5dfde89a53832
+Adding layer 'buildpacksio/lifecycle:launcher'
+Layer 'buildpacksio/lifecycle:launcher' SHA: sha256:ecca2ebdafd6469267556356c06e33fc3a5eacb3a772001a16b5dfde89a53832
 Reusing tarball for layer "buildpacksio/lifecycle:config" with SHA: sha256:6c9ea1d0a13f74ae542654d29aa39a1221840eb1091916c58d1f58d698d303c7
 Adding layer 'buildpacksio/lifecycle:config'
 Layer 'buildpacksio/lifecycle:config' SHA: sha256:6c9ea1d0a13f74ae542654d29aa39a1221840eb1091916c58d1f58d698d303c7
@@ -38,17 +38,17 @@ Adding label 'io.buildpacks.build.metadata'
 Adding label 'io.buildpacks.project.metadata'
 Setting CNB_LAYERS_DIR=/Users/jkimmel/go/src/github.com/joe-kimmel-vmw/unpacking-1/layers
 Setting CNB_APP_DIR=/Users/jkimmel/go/src/github.com/joe-kimmel-vmw/unpacking-1/workspace
-Setting CNB_PLATFORM_API=0.12
+Setting CNB_PLATFORM_API=0.11
 Setting CNB_DEPRECATION_MODE=quiet
 Prepending /cnb/process and /cnb/lifecycle to PATH
 Setting WORKDIR: '/Users/jkimmel/go/src/github.com/joe-kimmel-vmw/unpacking-1/workspace'
 Setting default process type 'shell'
 Setting ENTRYPOINT: '/cnb/process/shell'
 Saving apps/bash-script...
-*** Images (66e215c8e793):
+*** Images (41ae83b26d68):
       apps/bash-script
 
-*** Image ID: 66e215c8e793971aa79d25ab372960165da16be7a86ed606ada8336b304636a3
+*** Image ID: 41ae83b26d6809502b0a9ee7804b7dfc4fe697242ba992c590d32d005b77403d
 Reading buildpack directory: /Users/jkimmel/go/src/github.com/joe-kimmel-vmw/unpacking-1/layers/samples_hello-world
 Reading buildpack directory: /Users/jkimmel/go/src/github.com/joe-kimmel-vmw/unpacking-1/layers/samples_hello-moon
 Reading buildpack directory item: launch.toml
